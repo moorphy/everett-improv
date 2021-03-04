@@ -18,6 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://use.typekit.net/jdz1yrj.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -27,11 +28,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!-- ********TOP BAR************ -->
 	<div id="top-bar">
-		<div id="contactinfo">
-			<div id = "phone"><i class="fa fa-phone"></i> (425)-259-5912</div>
-			<div id = "address">2804 Grand Ave Everett, WA 98201 Suite 105</div>
-			<div id= "email">everettimprov@gmail.com</div>		
+		<div class="contact-info">
+			<div class = "contact-item phone"><a href="tel:1-425-259-5912"><i class="fa fa-phone"></i> (425) 259-5912</a></div>
+			<div class = "contact-item address"><a href ="http://maps.google.com/?q=2804 Grand Ave Everett, WA 98201 Suite 105"><i class="fa fa-map-marker"></i> 2804 Grand Ave - Everett, WA 98201 - Suite #105</a></div>
+			<div class= "contact-item email"><a href="mailto:everettimprov@gmail.com"><i class="fa fa-envelope-o"></i>  everettimprov@gmail.com</a></div>		
 		</div>
+		<div class="mobile-menu"> menu
+		<i class="fa fa-bars"></i>
+		</div>
+
 	</div>
 
 	<!-- ******************* The Navbar Area ******************* -->
