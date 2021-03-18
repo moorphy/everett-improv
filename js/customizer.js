@@ -6,6 +6,8 @@
  * Contains handlers to make Theme Customizer preview reload changes asynchronously.
  */
 
+const { init } = require("browser-sync");
+
 ( function( $ ) {
 
 	// Site title and description.
