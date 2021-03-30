@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: everett homepage
+ * Template Name: everett corporation page
  *
  * 
  * @package UnderStrap
@@ -15,7 +15,7 @@ get_header();
     <section class="home-banner">
         <img src="<?php echo get_template_directory_uri(); ?>./img/ei2.jpg" alt="Everett Improv Logo"/>
     </section>
-    <section class="home-post">
+    <section class="corp-post">
 		
 	<br>
     <?php
@@ -30,9 +30,8 @@ get_header();
 				}
 				?>
     </section>
-    <section class="home-sidebar">
-    <?php get_template_part( 'sidebar-templates/sidebar', 'right' ); ?>
+    <section class="corp-sidebar">
+    <?php get_template_part( 'sidebar-templates/sidebar', 'corp' ); ?>
 </section>
 </div>  <!--END Home Wrapper-->
 <?php get_footer();
-

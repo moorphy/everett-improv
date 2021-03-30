@@ -169,6 +169,20 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 				'after_title'   => '</h3>',
 			)
 		);
+		register_sidebar(
+			array(
+				'name'          => __( 'Classes Sidebar', 'understrap' ),
+				'id'            => 'classes-sidebar',
+				'description'   => __( 'Right sidebar for classes', 'understrap' ),
+			)
+		);
+		register_sidebar(
+			array(
+				'name'          => __( 'Corp Sidebar', 'understrap' ),
+				'id'            => 'corp-sidebar',
+				'description'   => __( 'Right sidebar for Corporation', 'understrap' ),
+			)
+		);
 
 	}
 } // End of function_exists( 'understrap_widgets_init' ).
