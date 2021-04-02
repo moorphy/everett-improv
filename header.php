@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<a href="javascript:toggleMenu();"><i class="fa fa-bars"></i></a>
 		</div>
 			<div id="menu-overlay">
-				<a href="https://everettimprov.com"><h1 class="menu-title">everett improv</h1></a>
+				<a href="http://www.everettimprov.com"><h1 class="menu-title">everett improv</h1></a>
 				<?php
 				wp_nav_menu(
 					array(
