@@ -13,7 +13,7 @@ get_header();
 ?>
 <div id="home-wrapper">
     <section class="home-banner">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/ei2.jpg" alt="Everett Improv Logo"/>
+        <img class="bannerimg" src="<?php echo get_template_directory_uri(); ?>/img/ei2.jpg" alt="Everett Improv Logo"/>
     </section>
     <section class="home-post">
 		
