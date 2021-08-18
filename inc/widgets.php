@@ -183,6 +183,13 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 				'description'   => __( 'Right sidebar for Corporation', 'understrap' ),
 			)
 		);
+		register_sidebar(
+			array(
+				'name'          => __( 'School Sidebar', 'understrap' ),
+				'id'            => 'school-sidebar',
+				'description'   => __( 'Right sidebar for School Page', 'understrap' ),
+			)
+		);
 
 	}
 } // End of function_exists( 'understrap_widgets_init' ).

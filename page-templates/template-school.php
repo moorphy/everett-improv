@@ -15,7 +15,7 @@ get_header();
     <section class="home-banner">
         <img src="<?php echo get_template_directory_uri(); ?>/img/ei2.jpg" alt="Everett Improv Logo"/>
     </section>
-    <section class="home-post">
+    <section class="corp-post">
 		
 	<br>
     <?php

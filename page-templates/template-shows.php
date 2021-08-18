@@ -12,7 +12,21 @@ defined( 'ABSPATH' ) || exit;
 get_header(); 
 ?>
 <div id="shows-wrapper">
+<section class="show-container">
+    <div id="show-post">	
+    <?php
+				while ( have_posts() ) {
+					the_post();
+					get_template_part( 'loop-templates/content', 'page' );
 
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) {
+						comments_template();
+					}
+				}
+				?>
+    </div>
+            </section>
     <section id="eishows">
         <div class="row">
          <div class="show-row">
@@ -47,8 +61,8 @@ get_header();
             </div>
             <div class="show-row">
                 <div class="show">
-                    <div class="show-img"></div>
-                    <div class="show-title">Spalsh Zone</div>
+                    <div class="show-img" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/splashzone.jpg"></div>
+                    <div class="show-title">Splash Zone</div>
                     <div class="show-text">An experimental improv show. Completely different every time. 3rd Saturday of every month at 9:30pm.  Adult Content.</div>
                 </div>
             </div>
@@ -63,21 +77,7 @@ get_header();
 
 </section>
 
-    <section class="show-container">
-    <div id="show-post">	
-    <?php
-				while ( have_posts() ) {
-					the_post();
-					get_template_part( 'loop-templates/content', 'page' );
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				}
-				?>
-    </div>
-            </section>
 </div>  <!--END Home Wrapper-->
 
 

@@ -32,7 +32,6 @@ h1 {
     display:flex;
     justify-content:space-evenly;
     align-items: center; 
-    margin-bottom: 100px;
     .contact-info {
         display:flex;
         padding-left: 1em;  
@@ -139,42 +138,52 @@ h1 {
     align-items:flex-start;
     align-self:center;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top:60px;
     .home-banner {
-        flex:1;
         align-self: flex-start;
+        flex:1.25;
         @media (max-width:$md){
-            max-width:95%;
+            align-self: center;
+            max-width:50%;
         }
         .bannerimg {
-            height:100%;
-            width:100%;
+            align-self: top; 
+            margin:0 auto;
         }
     }
     .home-post{
         display:flex;
-        flex:1;
+        align-items: center;
         margin:0 auto;
-        width:95%;
-        padding-top: 20px;
-         @media (max-width:$md){
-            max-width:95%;
+        width:100%;
+        padding-top: 25px;
+        flex:1.5;
+        @media (max-width:$sm){
+            max-width:90%;
         }
     }
-    .home-sidebar{
+/*   CURRENTLY DEPRICATED  
+     .home-sidebar{
         display:flex;  
-        flex:1;
         margin:0 auto;
         justify-content: flex-end;
-        padding-top: 50px;
-        width:80%;
+        flex:1;
+        width:90%;
         .widget-title {
             text-align: center;
+        }
+        .eaw-title {
+            font-size: 16px;
+            color:$secondary-500;
+        }
+        time {
+            font-size: 15px;
+            color:$primary;
         }
         @media (max-width:$md){
             justify-content: center;
         }
-    }
+    } */
     @media(max-width:$md){
         flex-direction: column;
         margin: 0 auto;
@@ -200,7 +209,8 @@ h1 {
 #classes-wrapper{
     padding-top: 50px;
     display:flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
+    align-items: flex-start; 
     @media (max-width:$md){
         flex-direction: column;
     } 
@@ -218,9 +228,6 @@ h1 {
     }
     .classes-sidebar {
         display:flex;
-        align-content: center;
-        padding-top: 50px;
-        align-content: flex-end;
         flex:1;
         order: 1;
         li {
@@ -235,6 +242,7 @@ h1 {
         @media (max-width:$md){
             order: -1;
             padding-top: 25px;
+            width:80%;
         }
     }
 }
@@ -261,8 +269,8 @@ h1 {
                 }
                 .show-row {
                     display:flex;
-                    justify-content: center;
                     align-content: center;
+                    margin:0 auto;
                     .show{
                         display:flex;
                         flex-direction: column;
@@ -271,11 +279,12 @@ h1 {
                             width:300px;     
                         }
                         @media (max-width:$md){
-                            width:90%;
+                            width:100%;
                         }
                         .show-img {
                             display:flex;
                             align-content: center;
+                            justify-content: center;
                             height:300px;
                             width:300px;
                             margin:0 auto;
@@ -296,8 +305,7 @@ h1 {
                                 margin:0 auto;
                             }
                             @media (max-width:$sm){
-                                width:200px; 
-                                height:200px; 
+                                margin:0 auto
                             }
                         }
                         .show-title {
@@ -333,20 +341,21 @@ h1 {
             margin:0 auto;
             padding:10px;
         }
+        
 }
 .corp-post {
-    display:flex;
-    flex:1.5;
-    padding:2%;
-    max-width: 90%;
-    margin:auto;
+    margin:0 auto;
+    align-self: flex-start;
+    flex:1;
+    width:80%;
+    padding: 5px 10px;  
 }
 .corp-sidebar {
-    display:flex;
-    align-content: center;
-    padding-top: 50px;
-    align-content: flex-end;
+    display:flex;  
+    margin:0 auto;
+    justify-content: flex-end;
     flex:1;
+    width:90%;
     li {
         list-style-type: none;
         text-align: left;
@@ -359,14 +368,14 @@ h1 {
 }
 .eyecandy-post{
     display:flex;
-    flex:1.5;
+    flex:1;
     padding:2%;
-    max-width: 90%;
+    width: 90%;
     margin:auto;
 }
 .collab-post {
     display:flex;
-    flex:1.5;
+    flex:1;
     width: 90%;
     margin:auto;
     padding:10px;

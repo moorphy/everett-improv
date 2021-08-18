@@ -30,9 +30,7 @@ get_header();
 				}
 				?>
     </section>
-    <section class="home-sidebar">
-    <?php get_template_part( 'sidebar-templates/sidebar', 'right' ); ?>
-</section>
+
 </div>  <!--END Home Wrapper-->
 <?php get_footer();
 
