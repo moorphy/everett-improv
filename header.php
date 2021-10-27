@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="top-bar">
 		<div class="contact-info">
 			<div class = "contact-item phone"><a href="tel:1-425-259-5912"><i class="fa fa-phone"></i><span> (425) 259-5912</span></a></div>
-			<div class = "contact-item address"><a href ="http://maps.google.com/?q=2804 Grand Ave Everett, WA 98201 Suite 105"><i class="fa fa-map-marker"></i><span> 2804 Grand Ave - Everett, WA 98201 - Suite #105</span></a></div>
+			<div class = "contact-item address"><a href ="http://maps.google.com/?q=2804 Grand Ave Everett, WA 98201 Suite 105"><i class="fa fa-map-marker"></i><span> 2610 Colby Ave - Everett, WA 98201</span></a></div>
 			<div class= "contact-item email"><a href="mailto:everettimprov@gmail.com"><i class="fa fa-envelope-o"></i><span>everettimprov@gmail.com</span></a></div>		
 		</div>
 		<!-- ******************* The Navbar Area ******************* -->
